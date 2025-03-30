@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - ReVolt Energy</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ReVolt Energy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="repurposing.html">Repurposing</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="collection-form" id="collectionForm">
+    <h2>Battery Collection Registration</h2>
+    <form action="process.php" method="POST">
+
+        <!-- Step 1: User Details -->
+        <div class="form-group">
+            <label for="name">👤 Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">📧 Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">📞 Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <!-- Step 2: Battery Details -->
+        <h3>Battery Details</h3>
+        <div class="form-group">
+            <label for="batteryType">🔋 Battery Type:</label>
+            <select id="batteryType" name="batteryType" required>
+                <option value="Lithium-ion">Lithium-ion</option>
+                <option value="Lead-acid">Lead-acid</option>
+                <option value="Nickel-Cadmium">Nickel-Cadmium</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="batteryQuantity">🔢 Quantity:</label>
+            <input type="number" id="batteryQuantity" name="batteryQuantity" min="1" required>
+        </div>
+
+        <!-- Step 3: Pickup Scheduling -->
+        <h3>Pickup Scheduling</h3>
+        <div class="form-group">
+            <label for="pickupDate">📅 Preferred Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pickupTime">⏰ Preferred Pickup Time:</label>
+            <input type="time" id="pickupTime" name="pickupTime" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">📍 Pickup Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <!-- Step 4: Quality Inspection Approval -->
+        <div class="form-group">
+            <label for="inspectionApproval">✅ Approve Quality Inspection:</label>
+            <input type="checkbox" id="inspectionApproval" name="inspectionApproval" required>
+            I agree that my batteries will undergo a quality inspection before acceptance.
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Submit Collection Request</button>
+    </form>
+</section>

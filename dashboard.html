@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - ReVolt Energy</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ReVolt Energy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+               
+                <li><a href="repurposing.html">Repurposing</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="#knowledgeHub">Knowledge Hub</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <section class="dashboard">
+        <h2>Your Contribution Dashboard</h2>
+        <div class="dashboard-container">
+            <div class="dashboard-item">
+                <h3 id="collected">0 Batteries Collected</h3>
+            </div>
+            <div class="dashboard-item">
+                <h3 id="repurposed">0 Batteries Repurposed</h3>
+            </div>
+            <div class="dashboard-item">
+                <h3 id="contribution">0% Contribution to Sustainability</h3>
+            </div>
+        </div>
+        <a href="collection.html" class="btn">Schedule New Collection</a>
+        
+    </section>
+    <div class="dashboard-section downloads-section">
+        <h3>🗂️ Document Downloads & Resources</h3>
+        <p>Access important guides and resources for battery recycling.</p>
+        <div class="download-container">
+            <div class="download-item">
+                <h4>📘 EV Battery Recycling Handbook</h4>
+                <a href="Downloads/handbook.pdf" download class="btn-download">Download PDF</a>
+            </div>
+            <div class="download-item">
+                <h4>📚 Government Compliance Guidelines</h4>
+                <a href="downloads/guidelines.pdf" download class="btn-download">Download PDF</a>
+            </div>
+            <div class="download-item">
+                <h4>🔋 Lithium-ion Safety & Usage Manual</h4>
+                <a href="downloads/EVSafetyGuidance.pdf" download class="btn-download">Download PDF</a>
+            </div>
+            
+            <div class="download-item">
+                <h4>⚡ Sustainable Battery Disposal Practices</h4>
+                <a href="downloads/Sustainable Battery Disposal Practices.pdf" download class="btn-download">Download PDF</a>
+            </div>
+        </div>
+    </div>
+    <section class="knowledge-hub" id="knowledgeHub">
+        <h2>Knowledge Hub: All About Battery Repurposing</h2>
+        <details>
+            <summary>❓ How long does the repurposing process take?</summary>
+            <p>It usually takes 5-7 days depending on the battery condition and inspection results.</p>
+        </details>
+    
+        <details>
+            <summary>⚡ Can all battery types be repurposed?</summary>
+            <p>We primarily handle Lithium-ion, Lead-acid, and Nickel-Cadmium batteries. Other battery types may be evaluated case by case.</p>
+        </details>
+    
+        <details>
+            <summary>📦 What happens if a battery is unfit for repurposing?</summary>
+            <p>Unfit batteries are safely disposed of following strict environmental regulations to prevent contamination.</p>
+        </details>
+    
+        <details>
+            <summary>🔋 What are the benefits of repurposing batteries?</summary>
+            <p>Battery repurposing reduces e-waste, minimizes environmental impact, and provides affordable energy solutions.</p>
+        </details>
+    
+        <details>
+            <summary>📊 How can I track my repurposing progress?</summary>
+            <p>You can track your collection and repurposing progress via the <strong>Dashboard</strong> under the ‘Track Progress’ section.</p>
+        </details>
+    </section>
+    <footer>
+        <p>&copy; 2025 ReVolt Energy. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

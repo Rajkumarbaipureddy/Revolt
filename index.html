@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href="images/icon copy.jpg">
+    <title>ReVolt Energy - Powering a Sustainable Tomorrow</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    
+    
+    <nav class="navbar">
+        <div class="logo">ReVolt Energy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="repurposing.html">Repurposing</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>  <!-- ✅ Add Registration Link -->
+            <li><a href="login.html">Login</a></li>        <!-- ✅ Add Login Link -->
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Powering a Sustainable Tomorrow</h1>
+            <p style="color: #fff;">Smart Battery Solutions for a Greener Future</p>
+
+            <a href="collection.html" class="btn">Explore Our Process</a>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="services">
+        <h2>Our Core Services</h2>
+        <div class="service-container">
+            <!-- Service 1: Battery Collection -->
+            <div class="service-card">
+                <img src="https://www.batteryrescue.com.au/wp-content/uploads/2019/05/Battery-Rescue-Battery-Container.jpg"
+                    alt="Battery Collection">
+                <h3>Battery Collection</h3>
+                <p>Efficient collection processes to recycle and repurpose used batteries.</p>
+                <a href="collection.html" class="btn">Learn More</a>
+            </div>
+
+            <!-- Service 2: Repurposing -->
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwEHJoHRF8yke_71DayQ34_Xn1yASCc9mNQ&s"
+                    alt="Battery Repurposing">
+                <h3>Repurposing Solutions</h3>
+                <p>Converting batteries into reliable energy storage systems.</p>
+                <a href="repurposing.html" class="btn">Learn More</a>
+            </div>
+
+            <!-- Service 3: Dashboard -->
+            <div class="service-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341709224/UP/WZ/HN/36033750/battery-monitoring-system.jpg"
+                    alt="User Dashboard">
+                <h3>Progress Dashboard</h3>
+                <p>Track your contributions and monitor real-time progress.</p>
+                <a href="dashboard.html" class="btn">Track Now</a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Home Intro Section with Form Button -->
+    
+    <!-- About Us Section -->
+    <section class="collection-form" id="collectionForm">
+        <h2>Battery Collection Registration</h2>
+        <form action="process.php" method="POST">
+    
+  
+<section class="collection-form" id="collectionForm">
+    <h2>Battery Collection Registration</h2>
+    <form action="process.php" method="POST">
+
+        <!-- Step 1: User Details -->
+        <div class="form-group">
+            <label for="name">👤 Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">📧 Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">📞 Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <!-- Step 2: Battery Details -->
+        <h3>Battery Details</h3>
+        <div class="form-group">
+            <label for="batteryType">🔋 Battery Type:</label>
+            <select id="batteryType" name="batteryType" required>
+                <option value="Lithium-ion">Lithium-ion</option>
+                <option value="Lead-acid">Lead-acid</option>
+                <option value="Nickel-Cadmium">Nickel-Cadmium</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="batteryQuantity">🔢 Quantity:</label>
+            <input type="number" id="batteryQuantity" name="batteryQuantity" min="1" required>
+        </div>
+
+        <!-- Step 3: Pickup Scheduling -->
+        <h3>Pickup Scheduling</h3>
+        <div class="form-group">
+            <label for="pickupDate">📅 Preferred Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pickupTime">⏰ Preferred Pickup Time:</label>
+            <input type="time" id="pickupTime" name="pickupTime" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">📍 Pickup Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <!-- Step 4: Quality Inspection Approval -->
+        <div class="form-group">
+            <label for="inspectionApproval">✅ Approve Quality Inspection:</label>
+            <input type="checkbox" id="inspectionApproval" name="inspectionApproval" required>
+            I agree that my batteries will undergo a quality inspection before acceptance.
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Submit Collection Request</button>
+    </form>
+</section>
+<!-- Modal Structure -->
+<div id="formModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Form Submitted Successfully!</h2>
+        <p>Thank you for your contribution to sustainability!</p>
+    </div>
+</div>
+
+
+    
+        </form>
+    </section>
+    <section class="about">
+        <h2>About ReVolt Energy</h2>
+        <p>
+            provide a seamless battery swapping and recycling solution for EVs, combining quick swap stations and a digital platform for tracking battery health and managing subscriptions.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 ReVolt Energy. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
